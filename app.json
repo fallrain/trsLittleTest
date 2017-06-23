@@ -1,0 +1,36 @@
+{
+  "pages" : [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window" : {
+    "backgroundTextStyle" : "light",
+    "navigationBarBackgroundColor" : "#0092d8",
+    "navigationBarTitleText" : "家电GO",
+    "navigationBarTextStyle" : "#fff"
+  },
+  "tabBar" : {
+    "backgroundColor" : "#f7f6fb",
+    "color" : "#b6b5ba",
+    "selectedColor" : "#0092d8",
+    "list" : [
+      {
+        "pagePath" : "pages/index/index",
+        "text" : "首页"
+      },
+      {
+        "pagePath" : "pages/logs/logs",
+        "text" : "条件查找"
+      },
+      {
+        "pagePath" : "pages/logs/logs",
+        "text" : "个人中心"
+      }
+    ]
+  },
+  "networkTimeout" : {
+    "request" : 10000,
+    "downloadFile" : 10000
+  },
+  "debug" : false
+}
