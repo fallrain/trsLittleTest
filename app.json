@@ -13,18 +13,25 @@
     "backgroundColor" : "#f7f6fb",
     "color" : "#b6b5ba",
     "selectedColor" : "#0092d8",
+    "position" : "bottom",
     "list" : [
       {
         "pagePath" : "pages/index/index",
-        "text" : "首页"
+        "text" : "首页",
+        "iconPath" : "assets/img/hago-tabBar-icon-home.png",
+        "selectedIconPath" : "assets/img/hago-tabBar-icon-home-active.png"
       },
       {
         "pagePath" : "pages/logs/logs",
-        "text" : "条件查找"
+        "text" : "条件查找",
+        "iconPath" : "assets/img/hago-tabBar-icon-list.png",
+        "selectedIconPath" : "assets/img/hago-tabBar-icon-list-active.png"
       },
       {
         "pagePath" : "pages/logs/logs",
-        "text" : "个人中心"
+        "text" : "个人中心",
+        "iconPath" : "assets/img/hago-tabBar-icon-person.png",
+        "selectedIconPath" : "assets/img/hago-tabBar-icon-person-active.png"
       }
     ]
   },
