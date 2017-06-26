@@ -1,7 +1,8 @@
 {
   "pages" : [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/personalCenter/personalCenter"
   ],
   "window" : {
     "backgroundTextStyle" : "light",
@@ -28,7 +29,7 @@
         "selectedIconPath" : "assets/img/hago-tabBar-icon-list-active.png"
       },
       {
-        "pagePath" : "pages/logs/logs",
+        "pagePath" : "pages/personalCenter/personalCenter",
         "text" : "个人中心",
         "iconPath" : "assets/img/hago-tabBar-icon-person.png",
         "selectedIconPath" : "assets/img/hago-tabBar-icon-person-active.png"
