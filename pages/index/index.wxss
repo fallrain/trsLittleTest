@@ -1,21 +1,144 @@
 /**index.wxss**/
-.userinfo {
+@import '/common.wxss';
+
+.index-container {
+  height: 100%;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction:column;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.hago-index-head {
+  width: 100%;
+  height: 218rpx;
+  background: #0092d8;
+  text-align: center;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.hago-index-head-title {
+  color: #fff;
+  font-size: 32rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+.hago-index-head-search {
+  margin-top:65rpx;
+  padding-left: 38rpx;
+  padding-right: 38rpx;
+}
+
+.hago-index-head-search-ipt {
+  height: 78rpx;
+  border-radius: 10rpx;
+  background: #fff;
+  border:1px solid #5085a4;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.hago-index-cnt{
+
+}
+
+.hago-index-cnt-mg{
+
+}
+
+.hago-index-cnt-ad{
+  width: 678rpx;
+  height: 268rpx;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 38rpx;
+  padding-bottom: 10rpx;
+  border-bottom:3px solid #cdcdcd;
+}
+
+.hago-index-cnt-ad-image{
+  width: 100%;
+  height: 100%;
+}
+/*首页展示列表*/
+.hago-index-cnt-list{
+  margin-top: 14rpx;
+  margin-bottom: 40rpx;
+}
+
+/*向您推荐*/
+.hago-index-cnt-list-recommend{
+  padding-left: 38rpx;
+  padding-right: 38rpx;
+  font-size:26rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.hago-index-cnt-list-recommend-list{
+  display: flex;
+}
+
+.hago-index-cnt-list-recommend-item{
+  flex-grow:1;
+}
+
+.hago-index-cnt-list-goods{
+
+}
+
+.hago-index-cnt-list-goods-item{
+  display: block;
+  height: 207rpx;
+}
+
+.hago-index-cnt-list-goods-item:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hago-index-cnt-list-goods-item-img{
+  float: left;
+  width: 188rpx;
+  height: 200rpx;
+}
+
+.hago-index-cnt-list-goods-item-inf{
+  float: left;
+  width: 548rpx;
+  height: 100%;
+  padding-top: 36rpx;
+  padding-bottom:30rpx;
+  border-bottom:3px solid #ccc;
+}
+
+/*商品名称*/
+.hago-index-cnt-list-goods-item-name{
+  font-size:30rpx;
+  color: #333;
+}
+
+.hago-index-cnt-list-goods-item-spec{
+  font-size: 18rpx;
+  color: #666;
+}
+
+.hago-index-cnt-list-goods-item-btm{
+  margin-top: 40rpx;
+}
+
+.hago-index-cnt-list-goods-item-btm-l{
+  float: left;
+  font-size:22rpx;
+  color: #333;
+}
+
+.hago-index-cnt-list-goods-item-price{
+  font-size:24rpx;
+  color: #ec0004;
+}
+
+.hago-index-cnt-list-goods-item-btm-r{
+  width: 220rpx;
+  color: #696969;
+  font-size:22rpx;
+  float: right;
 }

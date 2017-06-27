@@ -16,3 +16,6 @@
     <view class="flex-item bc_blue">3</view>
   </view>
 </view>
+<text class="text-selectable" selectable="true">
+  文本是否可选
+</text>

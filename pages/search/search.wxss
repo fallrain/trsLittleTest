@@ -1,0 +1,128 @@
+/**index.wxss**/
+@import '/common.wxss';
+@import '/assets/fonts/iconfont.wxss';
+
+.index-container {
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:column;
+}
+
+.hago-search-head-seach-par{
+  padding-top: 3rpx;
+  padding-bottom: 3rpx;
+  text-align: center;
+  border-top: 3px solid #cbcbcb;
+  border-bottom: 3px solid #cbcbcb;
+}
+
+.hago-search-head-seach-ipt,
+.hago-search-head-seach-btn{
+  display: inline-block;
+  height: 78rpx;
+  line-height: 78rpx;
+}
+
+.hago-search-head-seach-ipt{
+  width: 570rpx;
+  border-radius:5rpx;
+  border:1px solid #79797b;
+  font-size: 32rpx;
+}
+
+.hago-search-head-seach-btn{
+  width: 140rpx;
+  background: #189ad6;
+  color: #fff;
+  margin-left: -3rpx;
+  font-size: 32rpx;
+}
+
+.hago-search-head-seach-inf{
+  display: flex;
+  padding-top: 22rpx;
+  padding-bottom: 22rpx;
+  border-bottom:3px solid #797979;
+}
+
+.hago-search-head-seach-inf-item{
+  flex-grow: 1;
+  text-align: center;
+  color: #363636;
+  font-size:24rpx;
+}
+
+.hago-search-cnt{
+  border-top:3px solid #797979;
+  margin-top: 20rpx;
+}
+
+.hago-search-list{
+  box-sizing: border-box;
+}
+
+.hago-search-list:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.hago-search-list-item{
+  width: 50%;
+  height: 516rpx;
+  border-bottom:3px solid #cdcdcd;
+  float: left;
+}
+
+.hago-search-list-item:nth-child(odd){
+  border-right:3px solid #cdcdcd;
+}
+
+.hago-search-list-item-img{
+  width: 100%;
+  height: 372rpx;
+}
+
+.hago-search-list-item-inf{
+  padding-left: 16rpx;
+}
+
+.hago-search-list-item-inf-name{
+  font-size:30rpx;
+  color: #333;
+}
+
+.hago-search-list-item-inf-spec{
+  font-size: 18rpx;
+  color: #666;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.hago-search-list-item-inf-btm{
+
+}
+
+.hago-search-list-item-inf-btm:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hago-search-list-item-inf-price{
+  font-size:24rpx;
+  color: #ec0004;
+}
+
+.hago-search-list-item-inf-btm-l{
+  float: left;
+  font-size:22rpx;
+  color: #333;
+}
+
+.hago-search-list-item-inf-btm-r{
+  margin-left: 8rpx;
+  float: left;
+  color: #696969;
+  font-size:22rpx;
+}

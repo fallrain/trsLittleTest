@@ -1,0 +1,12 @@
+@import '/common.wxss';
+
+.flex-wrp {
+  display: flex;
+  width: 750 rpx;
+  height: 500 rpx;
+}
+
+.flex-item {
+  flex-grow: 1;
+  border: 1px solid;
+}

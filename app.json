@@ -2,6 +2,7 @@
   "pages" : [
     "pages/index/index",
     "pages/logs/logs",
+    "pages/search/search",
     "pages/personalCenter/personalCenter"
   ],
   "window" : {
@@ -19,20 +20,20 @@
       {
         "pagePath" : "pages/index/index",
         "text" : "首页",
-        "iconPath" : "assets/img/hago-tabBar-icon-home.png",
-        "selectedIconPath" : "assets/img/hago-tabBar-icon-home-active.png"
+        "iconPath" : "assets/img/app/hago-tabBar-icon-home.png",
+        "selectedIconPath" : "assets/img/app/hago-tabBar-icon-home-active.png"
       },
       {
-        "pagePath" : "pages/logs/logs",
+        "pagePath" : "pages/search/search",
         "text" : "条件查找",
-        "iconPath" : "assets/img/hago-tabBar-icon-list.png",
-        "selectedIconPath" : "assets/img/hago-tabBar-icon-list-active.png"
+        "iconPath" : "assets/img/app/hago-tabBar-icon-list.png",
+        "selectedIconPath" : "assets/img/app/hago-tabBar-icon-list-active.png"
       },
       {
         "pagePath" : "pages/personalCenter/personalCenter",
         "text" : "个人中心",
-        "iconPath" : "assets/img/hago-tabBar-icon-person.png",
-        "selectedIconPath" : "assets/img/hago-tabBar-icon-person-active.png"
+        "iconPath" : "assets/img/app/hago-tabBar-icon-person.png",
+        "selectedIconPath" : "assets/img/app/hago-tabBar-icon-person-active.png"
       }
     ]
   },
