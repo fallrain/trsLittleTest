@@ -22,6 +22,7 @@
   display: inline-block;
   height: 78rpx;
   line-height: 78rpx;
+  vertical-align: middle;
 }
 
 .hago-search-head-seach-ipt{
@@ -51,6 +52,7 @@
   text-align: center;
   color: #363636;
   font-size:24rpx;
+  vertical-align: middle;
 }
 
 .hago-search-cnt{
@@ -125,4 +127,128 @@
   float: left;
   color: #696969;
   font-size:22rpx;
+}
+
+.hago-search-terms-layer{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  font-size:24rpx;
+  z-index: 99;
+  /*display: none;*/
+}
+
+.hago-search-terms-layer-mask{
+  position: absolute;
+  opacity: 0.5;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hago-search-terms-layer-cnt{
+  position: absolute;
+  background: #fff;
+  min-height:100%;
+  width: 660rpx;
+  right:0;
+  padding-top: 20rpx;
+  padding-left: 26rpx;
+}
+
+.hago-search-terms-items-par{
+  color: #343434;
+}
+
+.hago-search-terms-items-par:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+
+.hago-search-terms-group{
+
+}
+
+.hago-search-terms-title{
+  margin-bottom: 16rpx;
+}
+
+.hago-search-terms-item{
+  float: left;
+  height: 54rpx;
+  line-height: 54rpx;
+  text-align: center;
+  background: #d7d7d7;
+  color: #343434;
+}
+
+.hago-search-terms-priceRange{
+
+}
+
+.hago-search-terms-priceRange:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hago-search-terms-priceRange-hline,
+.hago-search-terms-priceRange-ipt{
+  float: left;
+}
+
+.hago-search-terms-priceRange-ipt{
+  width: 248rpx;
+  height: 47rpx;
+  line-height: 47rpx;
+  background: #d7d7d7;
+  text-align: center;
+}
+
+.hago-search-terms-priceRange-ipt-ph{
+  color: #979797;
+  font-size: 24rpx;
+}
+
+.hago-search-terms-priceRange-hline{
+  width: 22rpx;
+  height: 3rpx;
+  background: #7a7a7a;
+  margin-top: 22rpx;
+  margin-left: 24rpx;
+  margin-right: 24rpx;
+}
+
+.hago-search-terms-priceRange-personchoose{
+  margin-top: 20rpx;
+}
+
+.hago-search-terms-priceRange-personchoose:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+.hago-search-terms-priceRange-personchoose-item{
+  float: left;
+  width: 196rpx;
+  height: 68rpx;
+  border-radius: 5rpx;
+  background: #f1f2f6;
+  color: #5e5f63;
+  text-align: center;
+}
+
+.hago-search-terms-priceRange-personchoose-item-p1{
+  font-size: 20rpx;
+  margin-top: 12rpx;
+}
+
+.hago-search-terms-priceRange-personchoose-item-p2{
+  font-size: 16rpx;
 }

@@ -6,3 +6,58 @@
 /*input start*/
 
 /*input end*/
+
+/*margin start*/
+.mt46{
+  margin-top: 46rpx;
+}
+
+.mb22{
+  margin-bottom: 22rpx;
+}
+
+.mr14{
+  margin-right: 14rpx;
+}
+
+.mr18{
+  margin-right: 18rpx;
+}
+
+.mr44{
+  margin-right: 44rpx;
+}
+
+/*margin end*/
+
+/*wdith start*/
+
+.w140{
+  width: 140rpx;
+}
+
+.w160{
+  width: 160rpx;
+}
+
+/*wdith end*/
+
+/*display start*/
+
+.dis-none{
+  display: none;
+}
+
+.dis-block{
+  display: block;
+}
+
+.dis-inline{
+  display: inline;
+}
+
+.dis-ib{
+  display: inline-block;
+}
+
+/*display end*/

@@ -8,8 +8,8 @@
     <ul class="hago-search-head-seach-inf">
       <li class="hago-search-head-seach-inf-item">价格<i class="iconfont icon-paixu"></i>
       </li>
-      <li class="hago-search-head-seach-inf-item">评价</li>
-      <li class="hago-search-head-seach-inf-item">筛选</li>
+      <li class="hago-search-head-seach-inf-item">评价<i class="iconfont icon-paixu"></i></li>
+      <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
     </ul>
   </view>
   <view class="hago-search-cnt">
@@ -168,5 +168,53 @@
         </view>
       </li>
     </ul>
+  </view>
+  <view class="js-hago-search-terms-layer hago-search-terms-layer" hidden="{{showSearchTerms}}">
+    <view class="hago-search-terms-layer-mask" catchtap="hideSearchTerms"></view>
+    <view class="hago-search-terms-layer-cnt">
+      <view class="hago-search-terms-group">
+        <view class="hago-search-terms-title">
+          条件查找
+        </view>
+        <ul class="hago-search-terms-items-par">
+          <li class="hago-search-terms-item w160 mr44 mb22">冰箱</li>
+          <li class="hago-search-terms-item w160 mr44 mb22">洗衣机</li>
+          <li class="hago-search-terms-item w160 mr44 mb22">空调</li>
+          <li class="hago-search-terms-item w160 mr44 mb22">热水器</li>
+          <li class="hago-search-terms-item w160 mr44 mb22">电视</li>
+          <li class="hago-search-terms-item w160 mr44 mb22">厨电</li>
+        </ul>
+      </view>
+      <view class="hago-search-terms-group">
+        <view class="hago-search-terms-title">
+          价格区间
+        </view>
+        <view class="hago-search-terms-priceRange">
+          <input class="hago-search-terms-priceRange-ipt" placeholder="最低价" placeholder-class="hago-search-terms-priceRange-ipt-ph" type="text"/>
+          <view class="hago-search-terms-priceRange-hline"></view>
+          <input class="hago-search-terms-priceRange-ipt" placeholder="最高价" placeholder-class="hago-search-terms-priceRange-ipt-ph" type="text"/>
+        </view>
+        <ul class="hago-search-terms-priceRange-personchoose">
+          <li class="hago-search-terms-priceRange-personchoose-item mr14">
+            <p class="hago-search-terms-priceRange-personchoose-item-p1">769-1319</p>
+            <p class="hago-search-terms-priceRange-personchoose-item-p2">33%的选择</p>
+          </li>
+          <li class="hago-search-terms-priceRange-personchoose-item mr14">
+            <p class="hago-search-terms-priceRange-personchoose-item-p1">1319-3399</p>
+            <p class="hago-search-terms-priceRange-personchoose-item-p2">66%的选择</p>
+          </li>
+          <li class="hago-search-terms-priceRange-personchoose-item mr14">
+            <p class="hago-search-terms-priceRange-personchoose-item-p1">3399-6699</p>
+            <p class="hago-search-terms-priceRange-personchoose-item-p2">1%的选择</p>
+          </li>
+        </ul>
+      </view>
+      <ul class="hago-search-terms-items-par mt46">
+        <li class="hago-search-terms-item w140 mr18">商城在售</li>
+        <li class="hago-search-terms-item w140 mr18">商城在售</li>
+        <li class="hago-search-terms-item w140 mr18">新品推荐</li>
+        <li class="hago-search-terms-item w140 mr18">套购优惠</li>
+      </ul>
+    </view>
   </view>
 </view>

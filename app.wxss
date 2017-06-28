@@ -6,10 +6,14 @@ page {
   font-family: Microsoft YaHei, tahoma, arial;
 }
 
-view,input,button,ul,li{
+view,input,button,ul,li,p{
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+p,ul{
+  display: block;
 }
 
 input{
