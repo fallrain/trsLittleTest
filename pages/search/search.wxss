@@ -139,8 +139,20 @@
   /*display: none;*/
 }
 
+.hago-search-terms-layer-showpos{
+  left:0;
+}
+
+.hago-search-terms-layer-hidepos{
+  left:100%;
+}
+
 .searchTermsLayerShowAnimation{
   animation: searchTermsLayerShow .2s linear;
+}
+
+.searchTermsLayerHideAnimation{
+  animation: searchTermsLayerHide .2s linear;
 }
 
 @keyframes searchTermsLayerShow {
@@ -149,6 +161,15 @@
   }
   to{
     left: 0;
+  }
+}
+
+@keyframes searchTermsLayerHide {
+  from{
+    left: 0;
+  }
+  to{
+    left: 100%;
   }
 }
 

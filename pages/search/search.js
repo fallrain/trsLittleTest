@@ -5,17 +5,28 @@ Page({
     showSearchTerms : true,
     searchTermsLayerAnimationCls : ''
   },
+  onReady : function(){
+    this.bindLis();
+  },
+  bindLis : function(){
+  },
+  searchTermsLayerAnimationEnd : function(e){
+    if(e.detail.animationName == 'searchTermsLayerHide'){
+      /*this.setData({
+        showSearchTerms : true
+      });*/
+    }
+  },
   //事件处理函数
   showSearchTerms : function(){
     this.setData({
       showSearchTerms : false,
-      searchTermsLayerAnimationCls : 'searchTermsLayerShowAnimation'
+      searchTermsLayerAnimationCls : 'searchTermsLayerShowAnimation hago-search-terms-layer-showpos'
     });
   },
   hideSearchTerms : function(){
     this.setData({
-      showSearchTerms : true,
-      searchTermsLayerAnimationCls : ''
+      searchTermsLayerAnimationCls : 'searchTermsLayerHideAnimation hago-search-terms-layer-hidepos'
     });
-  }
+  },
 });
