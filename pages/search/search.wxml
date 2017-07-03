@@ -169,7 +169,7 @@
       </li>
     </ul>
   </view>
-  <view class="js-hago-search-terms-layer hago-search-terms-layer" hidden="{{showSearchTerms}}">
+  <view class="js-hago-search-terms-layer hago-search-terms-layer {{searchTermsLayerAnimationCls}}" hidden="{{showSearchTerms}}">
     <view class="hago-search-terms-layer-mask" catchtap="hideSearchTerms"></view>
     <view class="hago-search-terms-layer-cnt">
       <view class="hago-search-terms-group">

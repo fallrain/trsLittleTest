@@ -139,6 +139,19 @@
   /*display: none;*/
 }
 
+.searchTermsLayerShowAnimation{
+  animation: searchTermsLayerShow .2s linear;
+}
+
+@keyframes searchTermsLayerShow {
+  from{
+    left: 100%;
+  }
+  to{
+    left: 0;
+  }
+}
+
 .hago-search-terms-layer-mask{
   position: absolute;
   opacity: 0.5;
