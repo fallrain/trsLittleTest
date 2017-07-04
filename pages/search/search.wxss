@@ -190,7 +190,7 @@
   width: 660rpx;
   right:0;
   padding-top: 20rpx;
-  padding-left: 26rpx;
+  padding-left: 13rpx;
 }
 
 .hago-search-terms-items-par{
@@ -214,11 +214,15 @@
 
 .hago-search-terms-item{
   float: left;
-  height: 54rpx;
-  line-height: 54rpx;
+  height: 56rpx;
+  line-height: 56rpx;
   text-align: center;
-  background: #d7d7d7;
+  background: #fff;
   color: #343434;
+  border:1px solid #e6e6e6;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  overflow: hidden;
 }
 
 .hago-search-terms-priceRange{
@@ -237,11 +241,13 @@
 }
 
 .hago-search-terms-priceRange-ipt{
-  width: 248rpx;
-  height: 47rpx;
-  line-height: 47rpx;
-  background: #d7d7d7;
+  width: 200rpx;
+  height: 56rpx;
+  line-height: 56rpx;
+  background: #fff;
   text-align: center;
+  color: #cfcfcf;
+  border:1px solid #e6e6e6;
 }
 
 .hago-search-terms-priceRange-ipt-ph{
@@ -250,12 +256,12 @@
 }
 
 .hago-search-terms-priceRange-hline{
-  width: 22rpx;
+  width: 14rpx;
   height: 3rpx;
-  background: #7a7a7a;
+  background: #e6e6e6;
   margin-top: 22rpx;
-  margin-left: 24rpx;
-  margin-right: 24rpx;
+  margin-left: 1rpx;
+  margin-right: 1rpx;
 }
 
 .hago-search-terms-priceRange-personchoose{

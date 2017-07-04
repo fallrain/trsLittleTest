@@ -12,12 +12,20 @@
   margin-top: 46rpx;
 }
 
+.mb14{
+  margin-bottom: 14rpx;
+}
+
 .mb22{
   margin-bottom: 22rpx;
 }
 
 .mr14{
   margin-right: 14rpx;
+}
+
+.mr16{
+  margin-right: 16rpx;
 }
 
 .mr18{
@@ -38,6 +46,10 @@
 
 .w160{
   width: 160rpx;
+}
+
+.w200{
+  width: 200rpx;
 }
 
 /*wdith end*/
