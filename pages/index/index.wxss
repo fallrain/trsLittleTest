@@ -13,15 +13,16 @@
   height: 218rpx;
   background: #0092d8;
   text-align: center;
+  padding-bottom:6rpx;
 }
 
 .hago-index-head-title {
+  display: inline-block;
   color: #fff;
   font-size: 32rpx;
 }
 
 .hago-index-head-search {
-  margin-top:65rpx;
   padding-left: 38rpx;
   padding-right: 38rpx;
 }

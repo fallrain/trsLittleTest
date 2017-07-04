@@ -1,10 +1,12 @@
 //index.js
 //获取应用实例
 var app = getApp();
+var util = require('../../utils/util.js');
 Page({
   data : {
     motto : 'Hello World1',
-    userInfo : {}
+    userInfo : {},
+    getSearchTipData : util.getSearchTipData()//控制搜素区显示隐藏的数据
   },
   //事件处理函数
   bindViewTap : function(){
@@ -22,5 +24,12 @@ Page({
         userInfo : userInfo
       })
     })
+  },
+  showSearchTip : function(){
+    util.showSearchTip(this);
+  },
+  jumpSearch : function(){
+    //重载搜素页
+    util.jumpSearch();
   }
 });

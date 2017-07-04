@@ -20,6 +20,10 @@
   margin-bottom: 22rpx;
 }
 
+.mb65{
+  margin-bottom: 65rpx;
+}
+
 .mr14{
   margin-right: 14rpx;
 }
@@ -73,3 +77,19 @@
 }
 
 /*display end*/
+
+/*template start*/
+
+.hago-searchTip-template{
+  position: fixed;
+  top:88rpx;
+  bottom:0;
+  background: #fff;
+  width:100%;
+}
+
+.hago-searchTip-template-pd{
+  padding-top: 16rpx;
+  padding-left: 22rpx;
+}
+/*template start*/

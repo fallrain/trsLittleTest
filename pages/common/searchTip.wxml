@@ -1,0 +1,5 @@
+<template name="searchTip">
+  <view class="hago-searchTip-template hago-searchTip-template-pd">
+
+  </view>
+</template>

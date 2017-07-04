@@ -1,17 +1,19 @@
 <!--index.wxml-->
+<import src="/pages/common/searchTip.wxml"/>
+<template is="searchTip"/>
 <view class="index-container">
   <view class="hago-search-head">
     <view class="hago-search-head-seach-par">
       <input class="hago-search-head-seach-ipt" type="text" placeholder="搜索"/>
       <button class="hago-search-head-seach-btn">搜索</button>
     </view>
-    <ul class="hago-search-head-seach-inf">
-      <li class="hago-search-head-seach-inf-item">价格<i class="iconfont icon-paixu"></i>
-      </li>
-      <li class="hago-search-head-seach-inf-item">评价<i class="iconfont icon-paixu"></i></li>
-      <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
-    </ul>
   </view>
+  <ul class="hago-search-head-seach-inf">
+    <li class="hago-search-head-seach-inf-item">价格<i class="iconfont icon-paixu"></i>
+    </li>
+    <li class="hago-search-head-seach-inf-item">评价<i class="iconfont icon-paixu"></i></li>
+    <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
+  </ul>
   <view class="hago-search-cnt">
     <ul class="hago-search-list">
       <li class="hago-search-list-item">

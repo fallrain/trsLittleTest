@@ -1,9 +1,9 @@
 <!--index.wxml-->
 <view class="index-container">
   <view class="hago-index-head">
-    <text class="hago-index-head-title">购 你 所 想</text>
+    <text class="hago-index-head-title mb65">购 你 所 想</text>
     <view class="hago-index-head-search">
-      <input class="hago-index-head-search-ipt" type="text" placeholder="搜索"/>
+      <input class="hago-index-head-search-ipt" type="text" placeholder="搜索" catchtouchstart="jumpSearch"/>
     </view>
   </view>
   <view class="hago-index-cnt">
