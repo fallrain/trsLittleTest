@@ -18,7 +18,8 @@
 }
 
 .hago-search-head-seach-ipt,
-.hago-search-head-seach-btn{
+.hago-search-head-seach-btn,
+.hago-search-head-seach-btn-cancel{
   display: inline-block;
   height: 78rpx;
   line-height: 78rpx;
@@ -32,12 +33,19 @@
   font-size: 32rpx;
 }
 
-.hago-search-head-seach-btn{
+.hago-search-head-seach-btn,
+.hago-search-head-seach-btn-cancel{
   width: 140rpx;
   background: #189ad6;
   color: #fff;
   margin-left: -3rpx;
   font-size: 32rpx;
+}
+
+.hago-search-head-seach-btn-cancel{
+  background: #fff;
+  border:1px solid #ccc;
+  color: #ccc;
 }
 
 .hago-search-head-seach-inf{

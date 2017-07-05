@@ -13,11 +13,16 @@ module.exports = {
     var second = date.getSeconds();
     return [year, month, day].map(formatNumber).join('/') + ' ' + [hour, minute, second].map(formatNumber).join(':');
   },
-  getSearchTipData : function(){
+  getSearchTipData : function(obj){
     //值是函数返回一个新对象，如果直接一个对象，那此对象就共用了，请注意这点
-    return {
-      searchTipHidden : false
+    var returnObj = {
+      searchBtnVal : '取消',
+      searchBtnClass : 'hago-search-head-seach-btn-cancel'
     };
+    if(obj){
+      Object.assign(returnObj, obj);
+    }
+    return returnObj;
   },
   showSearchTip : function(app){
     /*显示搜索提示页*/

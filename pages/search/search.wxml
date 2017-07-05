@@ -5,7 +5,7 @@
   <view class="hago-search-head">
     <view class="hago-search-head-seach-par">
       <input class="hago-search-head-seach-ipt" type="text" placeholder="搜索"/>
-      <button class="hago-search-head-seach-btn">搜索</button>
+      <button class="{{searchTipData.searchBtnClass}}" type="button" catchtap="{{searchBtnLis}}">{{searchTipData.searchBtnVal}}</button>
     </view>
   </view>
   <ul class="hago-search-head-seach-inf">

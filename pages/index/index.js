@@ -6,7 +6,6 @@ Page({
   data : {
     motto : 'Hello World1',
     userInfo : {},
-    getSearchTipData : util.getSearchTipData()//控制搜素区显示隐藏的数据
   },
   //事件处理函数
   bindViewTap : function(){
