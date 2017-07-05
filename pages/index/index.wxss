@@ -108,7 +108,7 @@
   height: 100%;
   padding-top: 36rpx;
   padding-bottom:30rpx;
-  border-bottom:3px solid #ccc;
+  border-bottom:1px solid #ccc;
 }
 
 /*商品名称*/

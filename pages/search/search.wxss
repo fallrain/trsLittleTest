@@ -13,8 +13,8 @@
   padding-top: 3rpx;
   padding-bottom: 3rpx;
   text-align: center;
-  border-top: 3px solid #cbcbcb;
-  border-bottom: 3px solid #cbcbcb;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
 }
 
 .hago-search-head-seach-ipt,

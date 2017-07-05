@@ -24,6 +24,14 @@
   margin-bottom: 65rpx;
 }
 
+.ml6{
+  margin-left: 6rpx;
+}
+
+.mr6{
+  margin-right: 6rpx;
+}
+
 .mr14{
   margin-right: 14rpx;
 }
@@ -82,7 +90,7 @@
 
 .hago-searchTip-template{
   position: fixed;
-  top:88rpx;
+  top:92rpx;
   bottom:0;
   background: #fff;
   width:100%;
@@ -91,5 +99,61 @@
 .hago-searchTip-template-pd{
   padding-top: 16rpx;
   padding-left: 22rpx;
+}
+
+.hago-searchTip-template-crumbs{
+  font-size:27rpx;
+}
+
+.hago-searchTip-template-crumbs-item{
+  display: inline-block;
+}
+
+.hago-searchTip-template-crumbs-iconfont{
+  margin-left:6rpx;
+}
+
+.hago-searchTip-template-crumbs-idIcon{
+  color: #ed6d71;
+}
+
+.hago-searchTip-template-prompt{
+  font-size:24rpx;
+}
+
+.hago-searchTip-template-prompt-item{
+  height: 86rpx;
+  line-height: 86rpx;
+}
+
+.hago-searchTip-template-prompt-item:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hago-searchTip-template-prompt-item-name{
+  display: inline-block;
+  float: left;
+}
+
+.hago-searchTip-template-prompt-item-inf-par{
+  float: right;
+}
+
+.hago-searchTip-template-prompt-item-infItem{
+  display: inline-block;
+  border-radius:5rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  background: #f1f2f6;
+  color: #85868a;
+  text-align: center;
+  padding-left:18rpx;
+  padding-right: 18rpx;
+}
+
+.hago-searchTip-template-prompt-item-infItem{
+  margin-right: 18rpx;
 }
 /*template start*/
