@@ -1,66 +1,67 @@
 <!--index.wxml-->
 <import src="/pages/common/searchTip.wxml"/>
 <template is="searchTip"  data="{{searchTipData}}"/>
-<view class="index-container" hidden="{{!searchTipData.hidden}}">
+<view class="index-container">
   <view class="hago-search-head">
     <view class="hago-search-head-seach-par">
       <input class="hago-search-head-seach-ipt" type="text" placeholder="搜索" bindinput="searchIptChange"/>
       <button class="{{searchTipData.searchBtnClass}}" type="button" catchtap="{{searchBtnLis}}">{{searchTipData.searchBtnVal}}</button>
     </view>
   </view>
-  <ul class="hago-search-head-seach-inf">
-    <li class="hago-search-head-seach-inf-item {{priceIconSort!=''?'hago-search-head-seach-inf-item-choose':''}}" data-type="price" data-sort="{{priceIconSort}}" catchtap="sort">价格
-      <label class="hago-search-head-seach-inf-icon-par">
-        <i class="iconfont icon-paixu-shengxu hago-search-head-seach-inf-icon {{priceIconSort=='up'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
-        <i class="iconfont icon-paixu-jiangxu hago-search-head-seach-inf-icon {{priceIconSort=='down'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
-      </label>
-    </li>
-    <li class="hago-search-head-seach-inf-item {{commentNumIconSort!=''?'hago-search-head-seach-inf-item-choose':''}}" data-type="commentNum" data-sort="{{commentNumIconSort}}" catchtap="sort">评价
-      <label class="hago-search-head-seach-inf-icon-par">
-        <i class="iconfont icon-paixu-shengxu hago-search-head-seach-inf-icon {{commentNumIconSort=='up'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
-        <i class="iconfont icon-paixu-jiangxu hago-search-head-seach-inf-icon {{commentNumIconSort=='down'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
-      </label>
-    </li>
-    <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
-  </ul>
-  <view class="hago-search-cnt">
-    <ul class="hago-search-list">
-      <li class="hago-search-list-item" wx:for="{{goods}}" wx:key="id">
-        <image class="hago-search-list-item-img" src="{{item.url}}"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">{{item.name}}</view>
-          <view class="hago-search-list-item-inf-spec">{{item.spec}}</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">{{item.price}}</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>{{item.commentNum}}</span>
-            </view>
-          </view>
-        </view>
+  <view class="hago-search-body" hidden="{{!searchTipData.hidden}}">
+    <ul class="hago-search-head-seach-inf">
+      <li class="hago-search-head-seach-inf-item {{priceIconSort!=''?'hago-search-head-seach-inf-item-choose':''}}" data-type="price" data-sort="{{priceIconSort}}" catchtap="sort">价格
+        <label class="hago-search-head-seach-inf-icon-par">
+          <i class="iconfont icon-paixu-shengxu hago-search-head-seach-inf-icon {{priceIconSort=='up'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+          <i class="iconfont icon-paixu-jiangxu hago-search-head-seach-inf-icon {{priceIconSort=='down'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+        </label>
       </li>
-      <!--<li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
+      <li class="hago-search-head-seach-inf-item {{commentNumIconSort!=''?'hago-search-head-seach-inf-item-choose':''}}" data-type="commentNum" data-sort="{{commentNumIconSort}}" catchtap="sort">评价
+        <label class="hago-search-head-seach-inf-icon-par">
+          <i class="iconfont icon-paixu-shengxu hago-search-head-seach-inf-icon {{commentNumIconSort=='up'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+          <i class="iconfont icon-paixu-jiangxu hago-search-head-seach-inf-icon {{commentNumIconSort=='down'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+        </label>
+      </li>
+      <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
+    </ul>
+    <view class="hago-search-cnt">
+      <ul class="hago-search-list">
+        <li class="hago-search-list-item" wx:for="{{goods}}" wx:key="id">
+          <image class="hago-search-list-item-img" src="{{item.url}}"></image>
+          <view class="hago-search-list-item-inf">
+            <view class="hago-search-list-item-inf-name">{{item.name}}</view>
+            <view class="hago-search-list-item-inf-spec">{{item.spec}}</view>
+            <view class="hago-search-list-item-inf-btm">
+              <view class="hago-search-list-item-inf-btm-l">
+                参考价：<span class="hago-search-list-item-inf-price">￥</span>
+                <span class="hago-search-list-item-inf-price">{{item.price}}</span>
+              </view>
+              <view class="hago-search-list-item-inf-btm-r">
+                <span>用户口碑 </span>
+                <span>{{item.commentNum}}</span>
+              </view>
             </view>
           </view>
-        </view>
-      </li>-->
-    </ul>
-  </view><view class="js-hago-search-terms-layer hago-search-terms-layer {{searchTermsLayerAnimationCls}}" hidden="{{showSearchTerms}}" catchanimationend="searchTermsLayerAnimationEnd">
+        </li>
+        <!--<li class="hago-search-list-item">
+          <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
+          <view class="hago-search-list-item-inf">
+            <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
+            <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
+            <view class="hago-search-list-item-inf-btm">
+              <view class="hago-search-list-item-inf-btm-l">
+                参考价：<span class="hago-search-list-item-inf-price">￥</span>
+                <span class="hago-search-list-item-inf-price">2399</span>
+              </view>
+              <view class="hago-search-list-item-inf-btm-r">
+                <span>用户口碑 </span>
+                <span>21222</span>
+              </view>
+            </view>
+          </view>
+        </li>-->
+      </ul>
+    </view><view class="js-hago-search-terms-layer hago-search-terms-layer {{searchTermsLayerAnimationCls}}" hidden="{{showSearchTerms}}" catchanimationend="searchTermsLayerAnimationEnd">
     <view class="hago-search-terms-layer-mask" catchtap="hideSearchTerms"></view>
     <view class="hago-search-terms-layer-cnt">
       <view class="hago-search-terms-group">
@@ -111,5 +112,6 @@
         <button class="hago-search-terms-btn-submit" type="button">搜索</button>
       </view>
     </view>
+  </view>
   </view>
 </view>

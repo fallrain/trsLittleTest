@@ -89,7 +89,7 @@
 /*template start*/
 
 .hago-searchTip-template{
-  position: fixed;
+  position: absolute;
   top:92rpx;
   bottom:0;
   background: #fff;

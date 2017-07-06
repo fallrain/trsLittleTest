@@ -50,8 +50,6 @@
 
 .hago-search-head-seach-inf{
   display: flex;
-  padding-top: 22rpx;
-  padding-bottom: 22rpx;
   border-bottom:1px solid #797979;
 }
 
@@ -62,8 +60,8 @@
 .hago-search-head-seach-inf-icon{
   position: absolute;
   left: 0;
-  top:7rpx;
   color: #e9e9e9;
+  font-size:24rpx;
 }
 
 .hago-search-head-seach-inf-icon-choose{
@@ -76,6 +74,8 @@
   color: #363636;
   font-size:24rpx;
   vertical-align: middle;
+  height: 76rpx;
+  line-height: 76rpx;
 }
 
 .hago-search-head-seach-inf-item-choose{
