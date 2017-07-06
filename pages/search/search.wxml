@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <import src="/pages/common/searchTip.wxml"/>
 <template is="searchTip"  data="{{searchTipData}}"/>
-<view class="index-container">
+<view class="index-container" hidden="{{!searchTipData.hidden}}">
   <view class="hago-search-head">
     <view class="hago-search-head-seach-par">
       <input class="hago-search-head-seach-ipt" type="text" placeholder="搜索" bindinput="searchIptChange"/>
