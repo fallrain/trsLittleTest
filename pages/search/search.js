@@ -523,6 +523,33 @@ Page({
       searchTermsGoods : searchTermsGoods,
       searchTermsGoodsDetailCheck : searchTermsGoodsDetailCheck
     });
-
+  },
+  termsSpecCheck : function(e){
+    var tg = e.currentTarget;
+    var dataSet = tg.dataset;
+    var index = dataSet.index;
+    var check = dataSet.check;
+    var specIndex = dataSet.specindex;
+    var searchTermsGoodsDetailCheck = this.data.searchTermsGoodsDetailCheck;
+    searchTermsGoodsDetailCheck[index]['spec'][specIndex].check = !check;
+    this.setData({
+      searchTermsGoodsDetailCheck : searchTermsGoodsDetailCheck
+    });
+  },
+  resetSearchTerms : function(){
+    var searchTermsGoods = this.data.searchTermsGoods;
+    for(var i = 0; i < searchTermsGoods.length; i++){
+      searchTermsGoods[i].hidden = false;
+      searchTermsGoods[i].check = false;
+    }
+    this.setData({
+      searchTermsGoods : searchTermsGoods,
+      searchTermsGoodsDetailCheck : []
+    });
+  },
+  searchByTerms : function(){
+    this.setData({
+      showSearchTerms : true
+    })
   }
 });
