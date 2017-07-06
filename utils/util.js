@@ -18,7 +18,99 @@ module.exports = {
     var returnObj = {
       searchBtnVal : '取消',
       searchBtnClass : 'hago-search-head-seach-btn-cancel',
-      hidden : false
+      hidden : false,
+      searchTipGoods : [
+        {
+          id : 0,
+          name : '冰箱',
+          specs : [
+            {
+              id : 0,
+              name : '双门'
+            },
+            {
+              id : 1,
+              name : '海尔'
+            },
+            {
+              id : 2,
+              name : '美的'
+            },
+          ]
+        },
+        {
+          id : 1,
+          name : '冰丝席',
+          specs : [
+            {
+              id : 0,
+              name : '三件套'
+            },
+            {
+              id : 1,
+              name : '京东自营'
+            },
+            {
+              id : 2,
+              name : '可水洗'
+            },
+          ]
+        },
+        {
+          id : 2,
+          name : '冰箱 小型',
+          specs : [
+            {
+              id : 0,
+              name : '家用'
+            },
+            {
+              id : 1,
+              name : '迷你'
+            },
+            {
+              id : 2,
+              name : '京东自营'
+            },
+          ]
+        },
+        {
+          id : 3,
+          name : '冰柜',
+          specs : [
+            {
+              id : 0,
+              name : '家用'
+            },
+            {
+              id : 1,
+              name : '商用'
+            },
+            {
+              id : 2,
+              name : '星星'
+            },
+          ]
+        },
+        {
+          id : 4,
+          name : '冰箱 双门',
+          specs : [
+            {
+              id : 0,
+              name : '海尔'
+            },
+            {
+              id : 1,
+              name : '美的'
+            },
+            {
+              id : 2,
+              name : '无霜'
+            },
+          ]
+        },
+      ]
     };
     if(obj){
       Object.assign(returnObj, obj);

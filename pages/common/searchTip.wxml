@@ -7,69 +7,11 @@
       <navigator class="hago-searchTip-template-crumbs-item">冰箱</navigator>
     </view>
     <view class="hago-searchTip-template-prompt">
-      <view class="hago-searchTip-template-prompt-item">
-        <view class="hago-searchTip-template-prompt-item-name">冰箱</view>
+      <view class="hago-searchTip-template-prompt-item" wx:for="{{searchTipData.searchTipGoods}}" wx:id="{{id}}" wx:for-item="goods">
+        <view class="hago-searchTip-template-prompt-item-name">{{goods.name}}</view>
         <view class="hago-searchTip-template-prompt-item-inf-par">
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            双门
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            海尔
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            美的
-          </view>
-        </view>
-      </view>
-      <view class="hago-searchTip-template-prompt-item">
-        <view class="hago-searchTip-template-prompt-item-name">冰丝席</view>
-        <view class="hago-searchTip-template-prompt-item-inf-par">
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            三件套
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            京东自营
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">可水洗
-          </view>
-        </view>
-      </view>
-      <view class="hago-searchTip-template-prompt-item">
-        <view class="hago-searchTip-template-prompt-item-name">冰箱 小型</view>
-        <view class="hago-searchTip-template-prompt-item-inf-par">
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            家用
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">迷你
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            京东自营
-          </view>
-        </view>
-      </view>
-      <view class="hago-searchTip-template-prompt-item">
-        <view class="hago-searchTip-template-prompt-item-name">冰柜</view>
-        <view class="hago-searchTip-template-prompt-item-inf-par">
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            家用
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">商用
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            星星
-          </view>
-        </view>
-      </view>
-      <view class="hago-searchTip-template-prompt-item">
-        <view class="hago-searchTip-template-prompt-item-name">冰箱 双门</view>
-        <view class="hago-searchTip-template-prompt-item-inf-par">
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            海尔
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">美的
-          </view>
-          <view class="hago-searchTip-template-prompt-item-infItem">
-            无霜
+          <view class="hago-searchTip-template-prompt-item-infItem" catchtap="search" wx:for="{{goods.specs}}" wx:id="{{id}}" data-tipVal="{{item.name}}">
+            {{item.name}}
           </view>
         </view>
       </view>

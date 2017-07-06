@@ -13,6 +13,7 @@ Page({
     goods : goods.getGoods(),
     priceIconSort : '',
     commentNumIconSort : '',
+    searchIptVal : '',
     searchTermsGoods : [
       {
         "name" : "冰箱",
@@ -38,6 +39,98 @@ Page({
         "name" : "厨电",
         "checkCls" : ""
       }
+    ],
+    searchTipGoods : [
+      {
+        id : 0,
+        name : '冰箱',
+        specs : [
+          {
+            id : 0,
+            name : '双门'
+          },
+          {
+            id : 1,
+            name : '海尔'
+          },
+          {
+            id : 2,
+            name : '美的'
+          },
+        ]
+      },
+      {
+        id : 1,
+        name : '冰丝席',
+        specs : [
+          {
+            id : 0,
+            name : '三件套'
+          },
+          {
+            id : 1,
+            name : '京东自营'
+          },
+          {
+            id : 2,
+            name : '可水洗'
+          },
+        ]
+      },
+      {
+        id : 2,
+        name : '冰箱 小型',
+        specs : [
+          {
+            id : 0,
+            name : '家用'
+          },
+          {
+            id : 1,
+            name : '迷你'
+          },
+          {
+            id : 2,
+            name : '京东自营'
+          },
+        ]
+      },
+      {
+        id : 3,
+        name : '冰柜',
+        specs : [
+          {
+            id : 0,
+            name : '家用'
+          },
+          {
+            id : 1,
+            name : '商用'
+          },
+          {
+            id : 2,
+            name : '星星'
+          },
+        ]
+      },
+      {
+        id : 4,
+        name : '冰箱 双门',
+        specs : [
+          {
+            id : 0,
+            name : '海尔'
+          },
+          {
+            id : 1,
+            name : '美的'
+          },
+          {
+            id : 2,
+            name : '无霜'
+          },
+        ]
+      },
     ]
   },
   onLoad : function(){
@@ -105,31 +198,41 @@ Page({
     var tg = e.target;
     if(e.detail.value.length > 0){
       this.setData({
-        searchTipData : {
+        searchTipData : Object.assign({
           searchBtnVal : '搜索',
           searchBtnClass : 'hago-search-head-seach-btn',
-          hidden : false
-        },
+          hidden : false,
+          searchTipGoods : this.data.searchTipData.searchTipGoods
+        }),
         searchBtnLis : 'search'
       });
     }else{
       this.setData({
-        searchTipData : {
+        searchTipData : Object.assign({
           searchBtnVal : '取消',
           searchBtnClass : 'hago-search-head-seach-btn-cancel',
-          hidden : false
-        },
+          hidden : false,
+          searchTipGoods : this.data.searchTipData.searchTipGoods
+        }),
         searchBtnLis : 'goToIndex'
       });
     }
   },
   search : function(e){
+    var dataSet = e.currentTarget.dataset;
+    if(dataSet.tipval){
+      this.setData({
+        searchIptVal : dataSet.tipval
+      });
+    }
     this.setData({
-      searchTipData : {
-        searchBtnVal : '搜索',
-        searchBtnClass : 'hago-search-head-seach-btn',
-        hidden : true
-      }
+      searchTipData : Object.assign(this.data.searchTipData, {
+          searchBtnVal : '搜索',
+          searchBtnClass : 'hago-search-head-seach-btn',
+          hidden : true,
+          searchTipGoods : this.data.searchTipData.searchTipGoods
+        }
+      )
     });
   },
   goToIndex : function(){
