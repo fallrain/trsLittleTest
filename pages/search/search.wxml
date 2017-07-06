@@ -9,14 +9,23 @@
     </view>
   </view>
   <ul class="hago-search-head-seach-inf">
-    <li class="hago-search-head-seach-inf-item">价格<i class="iconfont icon-paixu-shengxu"></i>
+    <li class="hago-search-head-seach-inf-item {{priceIconSort!=''?'hago-search-head-seach-inf-item-choose':''}}" data-type="price" data-sort="{{priceIconSort}}" catchtap="sort">价格
+      <label class="hago-search-head-seach-inf-icon-par">
+        <i class="iconfont icon-paixu-shengxu hago-search-head-seach-inf-icon {{priceIconSort=='up'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+        <i class="iconfont icon-paixu-jiangxu hago-search-head-seach-inf-icon {{priceIconSort=='down'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+      </label>
     </li>
-    <li class="hago-search-head-seach-inf-item">评价<i class="iconfont icon-paixu"></i></li>
+    <li class="hago-search-head-seach-inf-item {{commentNumIconSort!=''?'hago-search-head-seach-inf-item-choose':''}}" data-type="commentNum" data-sort="{{commentNumIconSort}}" catchtap="sort">评价
+      <label class="hago-search-head-seach-inf-icon-par">
+        <i class="iconfont icon-paixu-shengxu hago-search-head-seach-inf-icon {{commentNumIconSort=='up'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+        <i class="iconfont icon-paixu-jiangxu hago-search-head-seach-inf-icon {{commentNumIconSort=='down'?'hago-search-head-seach-inf-icon-choose':''}}"></i>
+      </label>
+    </li>
     <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
   </ul>
   <view class="hago-search-cnt">
     <ul class="hago-search-list">
-      <li class="hago-search-list-item" wx:for="{{goods}}">
+      <li class="hago-search-list-item" wx:for="{{goods}}" wx:key="id">
         <image class="hago-search-list-item-img" src="{{item.url}}"></image>
         <view class="hago-search-list-item-inf">
           <view class="hago-search-list-item-inf-name">{{item.name}}</view>

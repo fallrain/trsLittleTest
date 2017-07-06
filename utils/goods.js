@@ -6,13 +6,15 @@ module.exports = {
     /*返回新对象而不是直接作为一个值的意义是，避免值共用*/
     return [
       {
+        id : 1,
         name : '233升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
-        price : 2399,
+        price : 5399,
         commentNum : '28',
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 2,
         name : '234升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 4399,
@@ -20,13 +22,15 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 3,
         name : '235升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
-        price : 4999,
+        price : 6999,
         commentNum : '363',
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 4,
         name : '236升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 5999,
@@ -34,6 +38,7 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 5,
         name : '237升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 15699,
@@ -41,6 +46,7 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 6,
         name : '238升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 19999,
@@ -48,6 +54,7 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 7,
         name : '239升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 9999,
@@ -55,6 +62,7 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 8,
         name : '240升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 21119,
@@ -62,6 +70,7 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 9,
         name : '250升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 41113,
@@ -69,6 +78,7 @@ module.exports = {
         url : '../../assets/img/index/test-goods-item.jpg'
       },
       {
+        id : 10,
         name : '260升定频风冷冰箱',
         spec : 'BCD-233WDPZ',
         price : 69999,

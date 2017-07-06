@@ -94,6 +94,7 @@
   bottom:0;
   background: #fff;
   width:100%;
+  z-index: 999;
 }
 
 .hago-searchTip-template-pd{

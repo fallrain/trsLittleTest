@@ -55,12 +55,31 @@
   border-bottom:1px solid #797979;
 }
 
+.hago-search-head-seach-inf-icon-par{
+  position: relative;
+}
+
+.hago-search-head-seach-inf-icon{
+  position: absolute;
+  left: 0;
+  top:7rpx;
+  color: #e9e9e9;
+}
+
+.hago-search-head-seach-inf-icon-choose{
+  color: #2671b4;
+}
+
 .hago-search-head-seach-inf-item{
   flex-grow: 1;
   text-align: center;
   color: #363636;
   font-size:24rpx;
   vertical-align: middle;
+}
+
+.hago-search-head-seach-inf-item-choose{
+  color: #2671b4;
 }
 
 .hago-search-cnt{

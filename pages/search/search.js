@@ -11,6 +11,8 @@ Page({
     searchBtnLis : 'goToIndex',
     searchTermsItemChoosed : '',
     goods : goods.getGoods(),
+    priceIconSort : '',
+    commentNumIconSort : '',
     searchTermsGoods : [
       {
         "name" : "冰箱",
@@ -44,6 +46,38 @@ Page({
   },
   onReady : function(){
 
+  },
+  sort : function(e){
+    var _this = e.currentTarget;
+    var dataSet = _this.dataset;
+    var type = dataSet.type;
+    var sortType = dataSet.sort;
+    if(!sortType || sortType == 'down'){
+      sortType = 'up';
+    }else{
+      sortType = 'down';
+    }
+    var beSetData = {};
+    var otherType = type == 'price' ? 'commentNum' : 'price';
+    beSetData[type + 'IconSort'] = sortType;
+    beSetData[otherType + 'IconSort'] = '';
+    this.setData(beSetData);
+    //对数据进行排序
+    this.sortGoodsData(type, sortType);
+  },
+  sortGoodsData : function(type, upOrDown){
+    var goodsAy = this.data.goods;
+    var newGoodsAy = [];
+    var upOrDownCoefficient = 1;
+    if(upOrDown == 'down'){
+      upOrDownCoefficient = -1;
+    }
+    goodsAy.sort(function(a, b){
+      return (a[type] - b[type]) * upOrDownCoefficient;
+    });
+    this.setData({
+      goods : goodsAy
+    });
   },
   getSearchTerms : function(){
 
