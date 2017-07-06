@@ -2,10 +2,13 @@
 //获取应用实例
 var app = getApp();
 var util = require('../../utils/util.js');
+//商品数据模拟js,以后需要从接口返回
+var goods = require('../../utils/goods.js');
 Page({
   data : {
     motto : 'Hello World1',
     userInfo : {},
+    goods : goods.getGoods()
   },
   //事件处理函数
   bindViewTap : function(){

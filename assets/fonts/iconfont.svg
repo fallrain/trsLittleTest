@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Wed Jul  5 09:58:03 2017
+Created by FontForge 20120731 at Thu Jul  6 15:49:49 2017
  By admin
 </metadata>
 <defs>
@@ -19,7 +19,7 @@ Created by FontForge 20120731 at Wed Jul  5 09:58:03 2017
     bbox="1 -145 1024 896"
     underline-thickness="0"
     underline-position="0"
-    unicode-range="U+0078-E8A1"
+    unicode-range="U+0078-E8A4"
   />
 <missing-glyph 
  />
@@ -58,5 +58,11 @@ t-10.5 25.5t10.5 25.5t25.5 10.5h321q15 0 25.5 -10.5t10.5 -25.5t-10.5 -25.5t-25.5
 h321q15 0 25.5 -10.5t10.5 -25.5t-10.5 -26t-25.5 -11zM912 34h-321q-15 0 -25.5 10.5t-10.5 25.5t10.5 25.5t25.5 10.5h321q15 0 25.5 -10.5t10.5 -25.5t-10.5 -25.5t-25.5 -10.5z" />
     <glyph glyph-name="icondayu" unicode="&#xe600;" 
 d="M299 135v-50l426 258v43l-426 254v-53l389 -223z" />
+    <glyph glyph-name="paixu-shengxu" unicode="&#xe8a2;" 
+d="M318 323h389q14 0 21 -11.5t0 -25.5q-39 -66 -194 -335q-7 -12 -21 -12t-21 12q-10 17 -98 169.5t-96 166.5q-7 12 -0.5 24t20.5 12zM709 447h-388q-14 0 -21.5 11.5t0.5 25.5q37 66 194 335q7 13 20.5 13t21.5 -13q9 -16 97.5 -168.5t96.5 -167.5q7 -11 0.5 -23.5
+t-21.5 -12.5z" />
+    <glyph glyph-name="paixu-jiangxu" unicode="&#xe8a4;" 
+d="M318 323h389q14 0 21 -11.5t0 -25.5q-39 -66 -194 -335q-7 -12 -21 -12t-21 12q-10 17 -98 169.5t-96 166.5q-7 12 -0.5 24t20.5 12zM709 447h-388q-14 0 -21.5 11.5t0.5 25.5q37 66 194 335q7 13 20.5 13t21.5 -13q9 -16 97.5 -168.5t96.5 -167.5q7 -11 0.5 -23.5
+t-21.5 -12.5z" />
   </font>
 </defs></svg>

@@ -9,14 +9,31 @@
     </view>
   </view>
   <ul class="hago-search-head-seach-inf">
-    <li class="hago-search-head-seach-inf-item">价格<i class="iconfont icon-paixu"></i>
+    <li class="hago-search-head-seach-inf-item">价格<i class="iconfont icon-paixu-shengxu"></i>
     </li>
     <li class="hago-search-head-seach-inf-item">评价<i class="iconfont icon-paixu"></i></li>
     <view class="js-search-head-showTerms-btn hago-search-head-seach-inf-item" bindtap="showSearchTerms">筛选<i class="iconfont icon-shaixuan"></i></view>
   </ul>
   <view class="hago-search-cnt">
     <ul class="hago-search-list">
-      <li class="hago-search-list-item">
+      <li class="hago-search-list-item" wx:for="{{goods}}">
+        <image class="hago-search-list-item-img" src="{{item.url}}"></image>
+        <view class="hago-search-list-item-inf">
+          <view class="hago-search-list-item-inf-name">{{item.name}}</view>
+          <view class="hago-search-list-item-inf-spec">{{item.spec}}</view>
+          <view class="hago-search-list-item-inf-btm">
+            <view class="hago-search-list-item-inf-btm-l">
+              参考价：<span class="hago-search-list-item-inf-price">￥</span>
+              <span class="hago-search-list-item-inf-price">{{item.price}}</span>
+            </view>
+            <view class="hago-search-list-item-inf-btm-r">
+              <span>用户口碑 </span>
+              <span>{{item.commentNum}}</span>
+            </view>
+          </view>
+        </view>
+      </li>
+      <!--<li class="hago-search-list-item">
         <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
         <view class="hago-search-list-item-inf">
           <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
@@ -32,143 +49,7 @@
             </view>
           </view>
         </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
-      <li class="hago-search-list-item">
-        <image class="hago-search-list-item-img" src="../../assets/img/index/test-goods-item.jpg"></image>
-        <view class="hago-search-list-item-inf">
-          <view class="hago-search-list-item-inf-name">223升定频风冷冰箱</view>
-          <view class="hago-search-list-item-inf-spec">BCD-223WDPZ</view>
-          <view class="hago-search-list-item-inf-btm">
-            <view class="hago-search-list-item-inf-btm-l">
-              参考价：<span class="hago-search-list-item-inf-price">￥</span>
-              <span class="hago-search-list-item-inf-price">2399</span>
-            </view>
-            <view class="hago-search-list-item-inf-btm-r">
-              <span>用户口碑 </span>
-              <span>21222</span>
-            </view>
-          </view>
-        </view>
-      </li>
+      </li>-->
     </ul>
   </view><view class="js-hago-search-terms-layer hago-search-terms-layer {{searchTermsLayerAnimationCls}}" hidden="{{showSearchTerms}}" catchanimationend="searchTermsLayerAnimationEnd">
     <view class="hago-search-terms-layer-mask" catchtap="hideSearchTerms"></view>
@@ -178,12 +59,7 @@
           条件查找
         </view>
         <ul class="hago-search-terms-items-par">
-          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">冰箱</li>
-          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">洗衣机</li>
-          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">空调</li>
-          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">热水器</li>
-          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">电视</li>
-          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">厨电</li>
+          <li wx:for="{{searchTermsGoods}}" class="hago-search-terms-item w200 mr16 mb14 {{item.checkCls}}" catchtap="termsHover">{{item.name}}</li>
         </ul>
       </view>
       <view class="hago-search-terms-group">
