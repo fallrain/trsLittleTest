@@ -69,7 +69,17 @@
           条件查找
         </view>
         <ul class="hago-search-terms-items-par">
-          <li wx:for="{{searchTermsGoods}}" class="hago-search-terms-item w200 mr16 mb14 {{item.checkCls}}" catchtap="termsHover">{{item.name}}</li>
+          <view wx:for="{{searchTermsGoods}}" class="hago-search-terms-item w200 mr16 mb14 {{item.check?'hago-search-terms-item-choosed':''}}" data-check="{{item.check}}"
+                catchtap="termsCheck" data-index="{{index}}" hidden="{{item.hidden}}" data-id="{{item.id}}">{{item.name}}</view>
+        </ul>
+      </view>
+      <view class="hago-search-terms-group" wx:for="{{searchTermsGoodsDetailCheck}}">
+        <view class="hago-search-terms-title">
+          {{item.name}}
+        </view>
+        <ul class="hago-search-terms-items-par">
+          <view wx:for="{{item.spec}}" wx:for-item="specItem" class="hago-search-terms-item w200 mr16 mb14 {{specItem.check?'hago-search-terms-item-choosed':''}}" data-check="{{specItem.check}}"
+                catchtap="" data-index="{{index}}">{{specItem.name}}</view>
         </ul>
       </view>
       <view class="hago-search-terms-group">

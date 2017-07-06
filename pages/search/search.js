@@ -16,30 +16,294 @@ Page({
     searchIptVal : '',
     searchTermsGoods : [
       {
+        id : 0,
+        hidden : true,
+        check : false,
         "name" : "冰箱",
-        "checkCls" : ""
       },
       {
+        id : 1,
+        hidden : false,
+        check : false,
         "name" : "洗衣机",
-        "checkCls" : ""
       },
       {
+        id : 2,
+        hidden : false,
+        check : false,
         "name" : "空调",
-        "checkCls" : ""
       },
       {
+        id : 3,
+        hidden : false,
+        check : false,
         "name" : "热水器",
-        "checkCls" : ""
+
       },
       {
+        id : 4,
+        hidden : false,
+        check : false,
         "name" : "电视",
-        "checkCls" : ""
       },
       {
+        id : 5,
+        hidden : false,
+        check : false,
         "name" : "厨电",
-        "checkCls" : ""
       }
     ],
+    searchTermsGoodsDetailCheck : [],
+    searchTermsGoodsDetail : {
+      0 : [
+        {
+          name : '箱门结构',
+          spec : [
+            {
+              name : '十字对开门'
+            },
+            {
+              name : '多门'
+            },
+            {
+              name : '对开门'
+            },
+            {
+              name : '双门'
+            },
+            {
+              name : '单门'
+            }
+          ]
+        },
+        {
+          name : '最大容积',
+          spec : [
+            {
+              name : '500L以上'
+            },
+            {
+              name : '301-500L'
+            },
+            {
+              name : '251-300L'
+            },
+            {
+              name : '150-250L'
+            },
+            {
+              name : '301-500L'
+            },
+            {
+              name : '150L以下'
+            }
+          ]
+        },
+        {
+          name : '制冷方式',
+          spec : [
+            {
+              name : '直冷'
+            },
+            {
+              name : '风冷'
+            },
+            {
+              name : '混冷'
+            },
+          ]
+        },
+      ],
+      1 : [
+        {
+          name : '结构',
+          spec : [
+            {
+              name : '滚筒'
+            },
+            {
+              name : '波轮'
+            },
+            {
+              name : '直桶'
+            },
+          ]
+        },
+        {
+          name : '最大容积',
+          spec : [
+            {
+              name : '500L以上'
+            },
+            {
+              name : '301-500L'
+            },
+            {
+              name : '251-300L'
+            },
+            {
+              name : '150-250L'
+            },
+            {
+              name : '301-500L'
+            },
+            {
+              name : '150L以下'
+            }
+          ]
+        }
+      ],
+      2 : [
+        {
+          name : '形状',
+          spec : [
+            {
+              name : '挂式'
+            },
+            {
+              name : '立式'
+            },
+          ]
+        },
+        {
+          name : '功率',
+          spec : [
+            {
+              name : '1P'
+            },
+            {
+              name : '2P以上'
+            },
+          ]
+        },
+        {
+          name : '制冷方式',
+          spec : [
+            {
+              name : '直冷'
+            },
+            {
+              name : '风冷'
+            },
+            {
+              name : '混冷'
+            },
+          ]
+        },
+      ],
+      3 : [
+        {
+          name : '类别',
+          spec : [
+            {
+              name : '直冷'
+            },
+            {
+              name : '风冷'
+            }
+          ]
+        }
+      ],
+      4 : [
+        {
+          name : '尺寸',
+          spec : [
+            {
+              name : '30以下'
+            },
+            {
+              name : '30'
+            },
+            {
+              name : '35'
+            },
+            {
+              name : '40'
+            },
+            {
+              name : '45'
+            },
+            {
+              name : '50'
+            },
+            {
+              name : '55'
+            },
+            {
+              name : '60'
+            },
+            {
+              name : '65'
+            },
+            {
+              name : '70'
+            },
+            {
+              name : '70以上'
+            },
+          ]
+        },
+      ],
+      5 : [
+        {
+          name : '箱门结构',
+          spec : [
+            {
+              name : '十字对开门'
+            },
+            {
+              name : '多门'
+            },
+            {
+              name : '对开门'
+            },
+            {
+              name : '双门'
+            },
+            {
+              name : '单门'
+            }
+          ]
+        },
+        {
+          name : '最大容积',
+          spec : [
+            {
+              name : '500L以上'
+            },
+            {
+              name : '301-500L'
+            },
+            {
+              name : '251-300L'
+            },
+            {
+              name : '150-250L'
+            },
+            {
+              name : '301-500L'
+            },
+            {
+              name : '150L以下'
+            }
+          ]
+        },
+        {
+          name : '制冷方式',
+          spec : [
+            {
+              name : '直冷'
+            },
+            {
+              name : '风冷'
+            },
+            {
+              name : '混冷'
+            },
+          ]
+        },
+      ]
+    },
     searchTipGoods : [
       {
         id : 0,
@@ -240,9 +504,25 @@ Page({
       url : '/pages/index/index'
     });
   },
-  termsHover : function(){
+  termsCheck : function(e){
+    var tg = e.currentTarget;
+    var dataSet = tg.dataset;
+    var index = dataSet.index;
+    var check = dataSet.check;
+    var searchTermsGoods = this.data.searchTermsGoods;
+    //选中的话，其他隐藏
+    for(var i = 0; i < searchTermsGoods.length; i++){
+      searchTermsGoods[i].hidden = !check;
+    }
+    searchTermsGoods[index].check = !check;
+    searchTermsGoods[index].hidden = check;
+
+    var id = dataSet.id;
+    var searchTermsGoodsDetailCheck = check ? [] : this.data.searchTermsGoodsDetail[id];
     this.setData({
-      searchTermsItemChoosed : 'hago-search-terms-item-choosed'
+      searchTermsGoods : searchTermsGoods,
+      searchTermsGoodsDetailCheck : searchTermsGoodsDetailCheck
     });
+
   }
 });

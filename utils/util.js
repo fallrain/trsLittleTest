@@ -23,6 +23,8 @@ module.exports = {
         {
           id : 0,
           name : '冰箱',
+          hidden : false,
+          check : false,
           specs : [
             {
               id : 0,
@@ -41,6 +43,8 @@ module.exports = {
         {
           id : 1,
           name : '冰丝席',
+          hidden : false,
+          check : false,
           specs : [
             {
               id : 0,
@@ -59,6 +63,8 @@ module.exports = {
         {
           id : 2,
           name : '冰箱 小型',
+          hidden : false,
+          check : false,
           specs : [
             {
               id : 0,
@@ -77,6 +83,8 @@ module.exports = {
         {
           id : 3,
           name : '冰柜',
+          hidden : false,
+          check : false,
           specs : [
             {
               id : 0,
@@ -95,6 +103,8 @@ module.exports = {
         {
           id : 4,
           name : '冰箱 双门',
+          hidden : false,
+          check : false,
           specs : [
             {
               id : 0,
