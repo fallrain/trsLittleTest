@@ -82,6 +82,10 @@
   color: #2671b4;
 }
 
+.hago-search-head-seach-inf-item-icon-listType{
+  color: #2671b4;
+}
+
 .hago-search-cnt{
   border-top:1px solid #797979;
   /*margin-top: 20rpx;*/

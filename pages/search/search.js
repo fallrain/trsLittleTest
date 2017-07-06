@@ -14,6 +14,8 @@ Page({
     priceIconSort : '',
     commentNumIconSort : '',
     searchIptVal : '',
+    listType : 'datu',
+    listTypeIconCls : 'icon-datu',
     searchTermsGoods : [
       {
         id : 0,
@@ -551,5 +553,22 @@ Page({
     this.setData({
       showSearchTerms : true
     })
+  },
+  changeListType : function(e){
+    var tg = e.currentTarget;
+    var dataSet = tg.dataset;
+    var type = dataSet.type;
+    var listType = dataSet.listtype;
+    if(type == 'icon-datu'){
+      type = 'icon-liebiao';
+      listType = 'liebiao';
+    }else{
+      type = 'icon-datu';
+      listType = 'datu';
+    }
+    this.setData({
+      listTypeIconCls : type,
+      listType : listType
+    });
   }
 });
