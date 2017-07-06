@@ -1,5 +1,5 @@
 <template name="searchTip">
-  <view class="hago-searchTip-template hago-searchTip-template-pd">
+  <view class="hago-searchTip-template hago-searchTip-template-pd" hidden="{{searchTipData.hidden}}">
     <view class="hago-searchTip-template-crumbs">
       <i class="iconfont icon-dianpu hago-searchTip-template-crumbs-idIcon mr6"></i>
       <navigator class="hago-searchTip-template-crumbs-item">店铺</navigator>

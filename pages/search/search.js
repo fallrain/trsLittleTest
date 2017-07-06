@@ -6,7 +6,8 @@ Page({
     showSearchTerms : true,
     searchTermsLayerAnimationCls : '',
     searchTipData : util.getSearchTipData(),//控制搜索提示区
-    searchBtnLis : 'goToIndex'
+    searchBtnLis : 'goToIndex',
+    searchTermsItemChoosed : ''
   },
   onReady : function(){
   },
@@ -29,12 +30,45 @@ Page({
       searchTermsLayerAnimationCls : 'searchTermsLayerHideAnimation hago-search-terms-layer-hidepos'
     });
   },
-  search : function(){
-    
+  searchIptChange : function(e){
+    var tg = e.target;
+    if(e.detail.value.length > 0){
+      this.setData({
+        searchTipData : {
+          searchBtnVal : '搜索',
+          searchBtnClass : 'hago-search-head-seach-btn',
+          hidden : false
+        },
+        searchBtnLis : 'search'
+      });
+    }else{
+      this.setData({
+        searchTipData : {
+          searchBtnVal : '取消',
+          searchBtnClass : 'hago-search-head-seach-btn-cancel',
+          hidden : false
+        },
+        searchBtnLis : 'goToIndex'
+      });
+    }
+  },
+  search : function(e){
+    this.setData({
+      searchTipData : {
+        searchBtnVal : '搜索',
+        searchBtnClass : 'hago-search-head-seach-btn',
+        hidden : true
+      }
+    });
   },
   goToIndex : function(){
     wx.reLaunch({
       url : '/pages/index/index'
+    });
+  },
+  termsHover : function(){
+    this.setData({
+      searchTermsItemChoosed : 'hago-search-terms-item-choosed'
     });
   }
 });

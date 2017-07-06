@@ -17,7 +17,8 @@ module.exports = {
     //值是函数返回一个新对象，如果直接一个对象，那此对象就共用了，请注意这点
     var returnObj = {
       searchBtnVal : '取消',
-      searchBtnClass : 'hago-search-head-seach-btn-cancel'
+      searchBtnClass : 'hago-search-head-seach-btn-cancel',
+      hidden : false
     };
     if(obj){
       Object.assign(returnObj, obj);

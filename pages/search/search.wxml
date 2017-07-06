@@ -1,10 +1,10 @@
 <!--index.wxml-->
 <import src="/pages/common/searchTip.wxml"/>
-<template is="searchTip"/>
+<template is="searchTip"  data="{{searchTipData}}"/>
 <view class="index-container">
   <view class="hago-search-head">
     <view class="hago-search-head-seach-par">
-      <input class="hago-search-head-seach-ipt" type="text" placeholder="搜索"/>
+      <input class="hago-search-head-seach-ipt" type="text" placeholder="搜索" bindinput="searchIptChange"/>
       <button class="{{searchTipData.searchBtnClass}}" type="button" catchtap="{{searchBtnLis}}">{{searchTipData.searchBtnVal}}</button>
     </view>
   </view>
@@ -178,12 +178,12 @@
           条件查找
         </view>
         <ul class="hago-search-terms-items-par">
-          <li class="hago-search-terms-item w200 mr16 mb14">冰箱</li>
-          <li class="hago-search-terms-item w200 mr16 mb14">洗衣机</li>
-          <li class="hago-search-terms-item w200 mr16 mb14">空调</li>
-          <li class="hago-search-terms-item w200 mr16 mb14">热水器</li>
-          <li class="hago-search-terms-item w200 mr16 mb14">电视</li>
-          <li class="hago-search-terms-item w200 mr16 mb14">厨电</li>
+          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">冰箱</li>
+          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">洗衣机</li>
+          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">空调</li>
+          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">热水器</li>
+          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">电视</li>
+          <li class="hago-search-terms-item w200 mr16 mb14 {{searchTermsItemChoosed}}" catchtap="termsHover">厨电</li>
         </ul>
       </view>
       <view class="hago-search-terms-group">
@@ -221,6 +221,10 @@
         <li class="hago-search-terms-item w140 mr18">新品推荐</li>
         <li class="hago-search-terms-item w140 mr18">套购优惠</li>
       </ul>-->
+      <view class="hago-search-terms-btm">
+        <button class="hago-search-terms-btn-reset" type="button">重置</button>
+        <button class="hago-search-terms-btn-submit" type="button">搜索</button>
+      </view>
     </view>
   </view>
 </view>

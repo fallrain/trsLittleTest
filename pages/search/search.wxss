@@ -52,7 +52,7 @@
   display: flex;
   padding-top: 22rpx;
   padding-bottom: 22rpx;
-  border-bottom:3px solid #797979;
+  border-bottom:1px solid #797979;
 }
 
 .hago-search-head-seach-inf-item{
@@ -64,8 +64,8 @@
 }
 
 .hago-search-cnt{
-  border-top:3px solid #797979;
-  margin-top: 20rpx;
+  border-top:1px solid #797979;
+  /*margin-top: 20rpx;*/
 }
 
 .hago-search-list{
@@ -80,12 +80,12 @@
 .hago-search-list-item{
   width: 50%;
   height: 516rpx;
-  border-bottom:3px solid #cdcdcd;
+  border-bottom:1rpx solid #cdcdcd;
   float: left;
 }
 
 .hago-search-list-item:nth-child(odd){
-  border-right:3px solid #cdcdcd;
+  border-right:1px solid #cdcdcd;
 }
 
 .hago-search-list-item-img{
@@ -233,6 +233,11 @@
   overflow: hidden;
 }
 
+.hago-search-terms-item-choosed{
+  border:1px solid #2d72b7;
+  color: #2d72b7;
+}
+
 .hago-search-terms-priceRange{
 
 }
@@ -299,4 +304,36 @@
 
 .hago-search-terms-priceRange-personchoose-item-p2{
   font-size: 16rpx;
+}
+
+.hago-search-terms-btm{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.hago-search-terms-btn-reset,
+.hago-search-terms-btn-submit{
+  border-radius:0;
+  width: 50%;
+  height: 76rpx;
+  line-height: 76rpx;
+  float: left;
+}
+
+.hago-search-terms-btm:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.hago-search-terms-btn-reset{
+  background: #fff;
+  color: #999;
+}
+
+.hago-search-terms-btn-submit{
+  background: #169bd5;
+  color: #fff;
 }
